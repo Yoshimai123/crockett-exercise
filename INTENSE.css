@@ -26,6 +26,11 @@ body {
     width: 100%;
 }
 
+.mail{
+    width: 5%;
+    height: 35%;
+}
+
 .contact {
     width: 100%;
     display: flex;
@@ -75,6 +80,19 @@ body {
     align-items: center;
     text-align: center; 
 }
+.input input {
+    padding: 0.2rem;
+    border-radius: 5px;
+    border: none;
+}
+button {
+    background-color: var(--color-yellow);
+    color: white;
+    padding: 0.2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
 .input h3 {
     color: white;
 }
@@ -95,7 +113,10 @@ body {
 h1{
     text-align: center;
     color: #454545;
-    border-bottom: 2px solid var(--color-yellow);
+    /*border-bottom: 2px solid var(--color-yellow);*/
+    text-decoration: var(--color-yellow) underline;
+
+
 }
 
 .showcase{
@@ -106,9 +127,97 @@ h1{
 
 }
 
-.showcase-sub{
+.showcase-sub {
     display: flex;
     justify-content: space-between;
-    padding-right: 5%;
-    padding-left: 5%;
+    padding-inline: 5%;
 }
+
+.showcase-sub div {
+    flex: 0 1 calc(30% - 20px);
+    margin: 10px;
+}
+
+.showcase-sub img {
+    width: 100%;
+    height: auto;
+}
+
+.title-showcase {
+    font-size: 1rem;
+    color: var(--color-yellow);
+    margin-top: 10px;
+}
+
+.number-showcase {
+    color: #454545;
+    margin-top: 5px;
+}
+
+.text-showcase {
+    font-size: 0.5rem;
+    margin-top: 5px;
+}
+.show-all-btn {
+    display: grid;
+    place-items: center;
+}
+.show-all-btn button {
+    font-size: 1rem;
+    margin-block: 1rem;
+}
+
+footer {
+    background-color: #272727;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+footer section {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; 
+}
+footer h3, footer p {
+    font-size: 0.5rem; 
+}
+footer p {
+    margin-bottom: 10px; 
+}
+footer h3 {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+footer .useful-links-list ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.useful-links li {
+    font-size: 0.6rem;
+    margin-bottom: 5px; 
+    list-style: none;
+     
+}
+.useful-links li::before {
+    content: "\2022";
+    color: var(--color-yellow);
+    padding-right: 0.3rem;
+}
+.useful-links li:hover{
+    cursor: pointer;
+}
+.newsletter p {
+    width: 10rem;
+}
+.newsletter-prompt input{
+    padding: 0.2rem;
+    border-radius: 5px;
+    border: none;
+}
+.date {
+    font-size: 0.4rem;
+    color: #5a5858;
+}
+
